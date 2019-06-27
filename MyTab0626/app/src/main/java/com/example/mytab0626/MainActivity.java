@@ -2,16 +2,15 @@ package com.example.mytab0626;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
-
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager veiwPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // Set PageChangeListener
         veiwPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -54,4 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+
 }
